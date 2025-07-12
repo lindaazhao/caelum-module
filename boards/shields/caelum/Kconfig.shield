@@ -1,0 +1,5 @@
+config SHIELD_CAELUM_LEFT
+    def_bool $(shields_list_contains,caelum_left)
+    
+config SHIELD_CAELUM_RIGHT
+    def_bool $(shields_list_contains,caelum_right)
