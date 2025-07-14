@@ -1,0 +1,12 @@
+file_format: "1"
+id: caelum
+name: Caelum
+type: shield
+url: https://github.com/lindaazhao/caelum
+requires: [pro_micro]
+features:
+  - keys
+  - underglow
+siblings:
+  - caelum_left
+  - caelum_right

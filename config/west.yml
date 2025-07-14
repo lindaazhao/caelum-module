@@ -7,13 +7,13 @@ manifest:
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
     - name: caelum_module
-      url-base: https://github.com/lindaazhao/caelum-module/ 
+      url-base: https://github.com/lindaazhao/
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
-    - name: caelum_
+    - name: caelum-module
       remote: caelum_module
-      revision: name
+      revision: main
   self:
     path: config
