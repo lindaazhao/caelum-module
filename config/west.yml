@@ -12,8 +12,8 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
-    - name: caelum-module
-      remote: caelum_module
-      revision: main
+    # - name: caelum-module
+    #   remote: caelum_module
+    #   revision: main
   self:
     path: config
