@@ -26,6 +26,8 @@
 #include <zmk/events/usb_conn_state_changed.h>
 #include <zmk/workqueue.h>
 
+#warning "rgb_underglow.c is being compiled"
+
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 #if !DT_HAS_CHOSEN(zmk_underglow)
@@ -219,6 +221,7 @@ static void zmk_rgb_underglow_tick_handler(struct k_timer *timer) {
     }
 
     k_work_submit_to_queue(zmk_workqueue_lowprio_work_q(), &underglow_tick_work);
+    LOG_INF("Submitted initial underglow tick");
 }
 
 K_TIMER_DEFINE(underglow_tick, zmk_rgb_underglow_tick_handler, NULL);
