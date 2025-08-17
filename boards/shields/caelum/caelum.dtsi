@@ -3,7 +3,7 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &caelum_layout;
+        zmk,physical-layout = &physical_layout0;
     };
     
     kscan0: kscan {
@@ -42,10 +42,6 @@
     physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
-        transform = <&default_transform>; // Label of the matrix transform for this layout
+        transform = <&default_transform>;
     };
-};
-
-&caelum_layout {
-    transform = <&default_transform>;
 };
